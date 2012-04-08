@@ -12,9 +12,10 @@
 		29BDB61915317E5200095880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BDB61815317E5200095880 /* CoreGraphics.framework */; };
 		29BDB61F15317E5200095880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29BDB61D15317E5200095880 /* InfoPlist.strings */; };
 		29BDB62115317E5200095880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB62015317E5200095880 /* main.m */; };
-		29BDB62515317E5200095880 /* TVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB62415317E5200095880 /* TVAppDelegate.m */; };
+		29BDB62515317E5200095880 /* TVAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB62415317E5200095880 /* TVAppController.m */; };
 		29BDB62815317E5300095880 /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB62715317E5300095880 /* TVViewController.m */; };
 		29BDB62B15317E5300095880 /* TVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29BDB62915317E5300095880 /* TVViewController.xib */; };
+		29BDB63315317EFE00095880 /* TVApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB63215317EFE00095880 /* TVApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		29BDB61415317E5200095880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29BDB61615317E5200095880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29BDB61815317E5200095880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		29BDB61C15317E5200095880 /* TextViewLink-Info.plist */ = {isa = PBXFileReference; path = "TextViewLink-Info.plist"; sourceTree = "<group>"; };
+		29BDB61C15317E5200095880 /* TextViewLink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextViewLink-Info.plist"; sourceTree = "<group>"; };
 		29BDB61E15317E5200095880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29BDB62015317E5200095880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29BDB62215317E5200095880 /* TextViewLink-Prefix.pch */ = {isa = PBXFileReference; path = "TextViewLink-Prefix.pch"; sourceTree = "<group>"; };
-		29BDB62315317E5200095880 /* TVAppDelegate.h */ = {isa = PBXFileReference; path = TVAppDelegate.h; sourceTree = "<group>"; };
-		29BDB62415317E5200095880 /* TVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVAppDelegate.m; sourceTree = "<group>"; };
-		29BDB62615317E5200095880 /* TVViewController.h */ = {isa = PBXFileReference; path = TVViewController.h; sourceTree = "<group>"; };
+		29BDB62215317E5200095880 /* TextViewLink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextViewLink-Prefix.pch"; sourceTree = "<group>"; };
+		29BDB62315317E5200095880 /* TVAppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVAppController.h; sourceTree = "<group>"; };
+		29BDB62415317E5200095880 /* TVAppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVAppController.m; sourceTree = "<group>"; };
+		29BDB62615317E5200095880 /* TVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
 		29BDB62715317E5300095880 /* TVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
 		29BDB62A15317E5300095880 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TVViewController.xib; sourceTree = "<group>"; };
+		29BDB63115317EFE00095880 /* TVApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVApplication.h; sourceTree = "<group>"; };
+		29BDB63215317EFE00095880 /* TVApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +80,10 @@
 		29BDB61A15317E5200095880 /* TextViewLink */ = {
 			isa = PBXGroup;
 			children = (
-				29BDB62315317E5200095880 /* TVAppDelegate.h */,
-				29BDB62415317E5200095880 /* TVAppDelegate.m */,
+				29BDB62315317E5200095880 /* TVAppController.h */,
+				29BDB62415317E5200095880 /* TVAppController.m */,
+				29BDB63115317EFE00095880 /* TVApplication.h */,
+				29BDB63215317EFE00095880 /* TVApplication.m */,
 				29BDB62615317E5200095880 /* TVViewController.h */,
 				29BDB62715317E5300095880 /* TVViewController.m */,
 				29BDB62915317E5300095880 /* TVViewController.xib */,
@@ -162,8 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BDB62115317E5200095880 /* main.m in Sources */,
-				29BDB62515317E5200095880 /* TVAppDelegate.m in Sources */,
+				29BDB62515317E5200095880 /* TVAppController.m in Sources */,
 				29BDB62815317E5300095880 /* TVViewController.m in Sources */,
+				29BDB63315317EFE00095880 /* TVApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

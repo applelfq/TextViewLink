@@ -1,5 +1,5 @@
 //
-//  TVViewController.h
+//  TVApplication.h
 //  TextViewLink
 //
 //  Created by Oropon on 12/04/08.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TVViewController : UIViewController
+@interface TVApplication : UIApplication<UIActionSheetDelegate>
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "TVAppController.h"
-
 #import "TVViewController.h"
 
 @implementation TVAppController
@@ -19,15 +18,15 @@
 #pragma mark - Initialize -
 /* ============================================================ */
 
-static TVAppController* _sharedController;
+static TVAppController* _sharedInstance;
 
 + (TVAppController*)sharedController
 {
-    if (!_sharedController) {
+    if (!_sharedInstance) {
         [self init];
     }
     
-    return _sharedController;
+    return _sharedInstance;
 }
 
 - (id)init
@@ -37,7 +36,7 @@ static TVAppController* _sharedController;
         return nil;
     }
 
-    _sharedController = self;
+    _sharedInstance = self;
 
     return self;
 }

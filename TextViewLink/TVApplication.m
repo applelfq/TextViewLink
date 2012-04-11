@@ -70,7 +70,7 @@
     sheet.cancelButtonIndex = sheet.numberOfButtons - 1;
     sheet.tag = 0;
     sheet.delegate = self;
-    
+
     // Show sheet
     [sheet showInView:[TVAppController sharedController].window];
     
